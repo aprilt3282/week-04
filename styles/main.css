@@ -1,0 +1,134 @@
+body {
+    
+    font-family: sans-serif;
+    font-size: 100%;
+    padding-left: 
+}
+  
+img{
+    max-width: 100%;
+  }  
+
+    
+} 
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+p{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color:black;
+}
+
+nav{
+  padding: 1rem;
+  background-color: darkgray;
+  font-size: 1rem;
+  color:white;
+}
+
+nav a {
+   padding: 1rem;
+   color: white;
+   text-decoration: none;
+}
+
+nav ul{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+}
+
+nav ul > li{
+  text-align: center;
+}
+
+header img {
+  max-width: 6%;
+  padding: 1rem; .5rem 0 1rem;
+}
+
+h1
+{
+  display: inline-block;
+  max-width: 100%;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  color:darkblue;
+
+  
+}
+h1 .logo{
+  font-size: 3rem;
+  
+}
+
+aside{
+  order: 1;
+  width: 20%;
+  margin-top: 2rem;
+}
+  
+.filter-form{
+  padding: 5rem 0 0 1rem;
+} 
+
+label{
+  font-size: 1rem;
+  color:black;
+  margin-left: 1rem;
+}
+
+select{
+  display: block;
+  width: 100%;
+  margin: .5rem auto .3rem;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: .75rem;
+  color:black;
+  margin-left: 1rem;
+}
+
+input[type="submit"]{
+  width:100%;
+  padding: .25rem;
+  background-color: white;
+  border: 1px solid: black;
+  border-radius: 3px;
+  font-size: .75rem;
+  color:white;
+  margin-left: 1rem;
+}
+
+section{
+  order: 2;
+  width: calc(85% - 1.5rem);
+  padding: 0 .75rem;
+}
+
+h2{
+  padding-top: 2rem;
+  font-size: 2rem;
+  text-align: left;
+  color: black;
+}
+
+.item-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h3{
+  font-size: 1rem;
+  text-align: left;
+  color:dimgrey;
+}
+
+
+

@@ -48,10 +48,21 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+
+//Event handler function that's triggered on form submit. Week 5
+function sort(){
+  console.log(document.sortBy.filter.value);
+  event.preventDefault();
+}
+
 //This loop tells me that the index of the products starts at "0", then go through the all the products to complete the full loop, while each time moving up 1 on the products list
+
 for(var i = 0; i<products.length; i++){
 //To print out only the name, description and price of the products, each one needs to be listed out in an array. The console will find the name, description and price of each product starting at the index (the beginning) and looping through all the way until the last product.
   console.log(products[i].name);
   console.log(products[i].description);
   console.log(products[i].price);
 }
+
+
+

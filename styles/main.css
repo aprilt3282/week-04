@@ -1,16 +1,15 @@
 body {
     
     font-family: sans-serif;
-    font-size: 100%;
-    padding-left: 
+    font-size: 90%;
+    1600px;
+    
 }
   
 img{
     max-width: 100%;
   }  
 
-    
-} 
 
 main{
   display: flex;
@@ -48,7 +47,7 @@ nav ul > li{
 }
 
 header img {
-  max-width: 6%;
+  max-width: 5%;
   padding: 1rem; .5rem 0 1rem;
 }
 
@@ -59,11 +58,11 @@ h1
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 2rem;
   color:darkblue;
-
   
 }
 h1 .logo{
   font-size: 3rem;
+  
   
 }
 
@@ -108,7 +107,7 @@ input[type="submit"]{
 section{
   order: 2;
   width: calc(85% - 1.5rem);
-  padding: 0 .75rem;
+  padding: 0 1rem;
 }
 
 h2{
@@ -119,15 +118,32 @@ h2{
 }
 
 .item-container{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+ width:25%;
+ float:left;
+ padding: 20px 15px;
+ margin-bottom: 40px; 
+  
 }
+
+.middle{
+  width: 25%;
+  padding: 10px 15px;
+  margin: 0px 0px 40px 5px;
+  float:left;
+}
+
+.last{
+  width: 25%;
+  padding: 15px;
+  float:left;
+ 
+}
+
 
 h3{
   font-size: 1rem;
   text-align: left;
-  color:dimgrey;
+  color:mediumblue;
 }
 
 

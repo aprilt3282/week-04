@@ -3,6 +3,8 @@ body {
     font-family: sans-serif;
     font-size: 90%;
     1600px;
+    height: auto;
+  padding-bottom: 20px;
     
 }
   
@@ -21,6 +23,11 @@ p{
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color:black;
+  font-weight: 300;
+}
+
+p.price{
+  font-weight:600;
 }
 
 nav{
@@ -28,8 +35,28 @@ nav{
   background-color: darkgray;
   font-size: 1rem;
   color:white;
+  
+  /*Large window*/
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: flex-end;
 }
 
+/* Medium screens */
+@media all and (max-width: 800px){
+  
+  nav{
+/*When on medium sized screens, center contents by evenly distributing empty space around items*/
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px){
+  
+  /*On small screens, remove row direction, but use column*/
+  flex-direction: column;
+}
 nav a {
    padding: 1rem;
    color: white;
@@ -45,6 +72,13 @@ nav ul{
 nav ul > li{
   text-align: center;
 }
+
+aside{
+  order: 1;
+  width: 15%;
+  margin-top: 2rem;
+}
+
 
 header img {
   max-width: 5%;
@@ -62,14 +96,8 @@ h1
 }
 h1 .logo{
   font-size: 3rem;
-  
-  
-}
+    
 
-aside{
-  order: 1;
-  width: 20%;
-  margin-top: 2rem;
 }
   
 .filter-form{
@@ -105,40 +133,39 @@ input[type="submit"]{
 }
 
 section{
-  order: 2;
-  width: calc(85% - 1.5rem);
-  padding: 0 1rem;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  height: 800px;
+  margin:auto;
 }
 
 h2{
   padding-top: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   color: black;
 }
 
 .item-container{
- width:25%;
+ width:20%;
  float:left;
- padding: 20px 15px;
- margin-bottom: 40px; 
+ padding: 10px 15px;
+  
+/* Medium screens */  
+  @media all and (max-width: 800px){
+  
+  nav{
+/*When on medium sized screens, center contents by evenly distributing empty space around items*/
+    justify-content: space-around;
+  }
+    
+@media all and (max-width: 500px){
+  
+  /*On small screens, remove row direction, but use column*/
+  flex-direction: column; 
   
 }
-
-.middle{
-  width: 25%;
-  padding: 10px 15px;
-  margin: 0px 0px 40px 5px;
-  float:left;
-}
-
-.last{
-  width: 25%;
-  padding: 15px;
-  float:left;
- 
-}
-
 
 h3{
   font-size: 1rem;

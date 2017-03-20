@@ -20,11 +20,12 @@
         <li><a href="#">Gloves</a></li>
         <li><a href="#">Scarves</a></li>
         <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <i id="cartIcon" onclick="showCart()" class="fa fa-shopping-cart" aria-hidden="true">
+          
+          </i>
         </li>
       </ul>
     </nav>
-
     
     <img src="images/logo-scarfcat.png" alt="cartoon cat wearing a scarf" class="scarfcat">
     <h1>
@@ -60,7 +61,9 @@
            src="images/ombre-infinity_300x400.png"
            alt="reversible plaid scarf">
       <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>  
-        <p class="price">$26.99</p>   
+        <p class="price">$26.99</p>
+        <button  onclick="onClickCart()">Add to Cart</button>
+        <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>
       </div>
     </div>
     
@@ -73,7 +76,9 @@
            src="images/ombre-infinity_300x400.png"
            alt="reversible plaid scarf">
       <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>  
-      <p class="price">$26.99</p>   
+      <p class="price">$26.99</p>
+      <button  onclick="onClickCart()">Add to Cart</button>  
+      <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>
       </div>
      </div>
     <div class="item-container">
@@ -84,7 +89,9 @@
            src="images/northern-lights_400x400.png"
            alt="northern lights scarf">
       <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>  
-      <p class="price">$26.99</p>   
+      <p class="price">$26.99</p>
+      <button onclick="onClickCart()">Add to Cart</button>
+        <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>
       </div>
      </div>
      <div class="item-container">
@@ -95,7 +102,9 @@
            src="images/ombre-infinity_300x400.png"
            alt="ombre infinity scarf">
       <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>  
-      <p class="price">$26.99</p>   
+      <p class="price">$26.99</p>
+      <button onclick="onClickCart()">Add to Cart</button>
+      <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>
       </div>
      </div>
     <div class="item-container">
@@ -107,6 +116,8 @@
            alt="fringed plaid scarf">
       <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
       <p class="price">$18.99</p>
+      <button onclick="onClickCart()">Add to Cart</button>
+      <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>  
       </div>
      </div>
       <div class="item-container">
@@ -117,7 +128,9 @@
            src="images/multi-color_300x400.png"
            alt="Multi-color scarf">
       <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>  
-        <p class="price">$11.99</p>   
+        <p class="price">$11.99</p>
+        <button onclick="onClickCart()">Add to Cart</button>
+        <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>
       </div>
      </div>
     <div class="item-container">
@@ -128,7 +141,9 @@
            src="images/etro_300x400.png"
            alt="Etro scarf">
       <p>Luxurious silk scarf with subtle paisley pattern. 100% silk</p>  
-      <p class="price">$249.99</p>   
+      <p class="price">$249.99</p>
+      <button onclick="onClickCart()">Add to Cart</button>
+      <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>  
       </div>
      </div>
       <div class="item-container">
@@ -139,7 +154,9 @@
            src="images/twill_400x400.png"
            alt="Ashby Twill scarf">
       <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool</p>  
-      <p class="price">$26.99</p>   
+      <p class="price">$26.99</p>
+      <button onclick="onClickCart()">Add to Cart</button>
+      <button id ="removeItem" onclick="removeCartItem()">Remove from cart</button>  
       </div>  
     </div>  
     </section>

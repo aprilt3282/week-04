@@ -64,7 +64,7 @@ for(var i = 0; i<products.length; i++){
   console.log(products[i].price);
 }
 
-  var cart = [{name:"Reversible Plaid"},{name:"Wool Cable Knit"}, {name: "Northern lights"}, {name:"Ombre Infinity"},{name:"Fringed Plaid"},{name:"Multi Color"}, {name:"Etro Paisley-Print Silk"},{name:"Ashby Twill"}]
+  var cart = [];
 
   function onClickCart(cartItems){
     
@@ -75,7 +75,7 @@ for(var i = 0; i<products.length; i++){
 
 }
 
-function removeCartItem(){
+function removeCartItem(item){
   var remv = document.getElementById("removeItem").innerHTML;
   var index = cart.indexOf(remv);
  if(index >= 0){
@@ -86,9 +86,14 @@ function removeCartItem(){
   event.preventDefault();
 }
 
-var cart = [];
+
 function insertCartItem(){
   cart.push({"name": products[i].name, "price":products[i].price});
   updatedCart();
   
 }
+
+
+
+
+
